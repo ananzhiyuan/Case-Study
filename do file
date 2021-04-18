@@ -90,7 +90,7 @@ regress lnOpeningGross Budget Genre_Comedy MPAA_D Sequel KnownStory Summer Holid
 
 //6.b.Drop all variables from the regression that are not significant at a 10 percent level of significance. Report the final regression.
 
-reg lnOpeningGross Budget Sequel Summer OpeningTheatres,robust
+reg lnOpeningGross Budget Sequel Summer OpeningTheatres,robust level(90)
 
 
 //6.c.Carefully interpret the slope coefficient of each variable in the regression. 
@@ -99,7 +99,7 @@ reg lnOpeningGross Budget Sequel Summer OpeningTheatres,robust
 //6.d.Suppose the number of movie theatres showing a movie on the opening weekend increases by one hundred. Provide a point estimate and a 95 percent confidence interval for the expected change in the opening weekend box-office revenue.
 
 regress lnOpeningGross OpeningTheatres,robust
-lincom OpeningTheatres*100 + _cons
+lincom OpeningTheatres*100
 
 
 //7.a.Run a simple linear regression predicting total U.S. box-office gross from opening weekend box-office gross.
