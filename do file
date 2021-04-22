@@ -128,7 +128,6 @@ estat hettest
 
 //7.e.Determine a sound regression model predicting total U.S. box-office gross from opening weekend box-office gross. 
 
-gen lnTotalUSGross = ln(TotalUSGross)
 reg lnTotalUSGross lnOpeningGross, robust
 //Ln(TotalUSGross) = 16.8730 + 4.72*10^(-8)OpeningGross
 
