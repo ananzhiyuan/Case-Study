@@ -123,7 +123,6 @@ test OpeningGross=4
 rvpplot OpeningGross
 estat hettest
 //H0: beta1=4 , Ha: beta1 != 4
-//算出t值，和critical t对比
 //H0 can be rejected
 
 
@@ -141,7 +140,7 @@ test lnOpeningGross = 4
 
 //7.g.What proportion of the variation in total U.S. box-office gross revenue can be explained by variation in the opening weekend box-office gross revenue? 
 
-//用不用R-squared检验？
+//
 
 
 
@@ -164,12 +163,10 @@ reg lnTotalUSGross Budget Genre_Comedy Summer OpeningTheatres OpeningGross Criti
 
 //8.c.Consider a movie with the characteristics of Flags of Our Fathers. Using the regression from part (b), provide a point estimate and a 95 percent prediction interval for the total U.S. gross revenue of a movie with such characteristics.
 
-//计算题
 //InTotalUSGross=15.762+4.27*10^(-9)*90000000-0.2*1+0.0002*1876 +3.28*10^(-8) 10245190+0.012* 79=17.6
 
 //8.d.Advise Griffith on how much he should be willing to invest in order to influence the critics to gain an extra ten points in the opinion score of a movie with the characteristics of Flags of Our Fathers, thereby earning such a film a score of eighty-nine points instead of seventy-nine points.
 
-//计算题
 //changes in criticsopinion=10
 //changes in ln(TotalUSGross)=10*0.0120895=0.120895=12.0895%
 
