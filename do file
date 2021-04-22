@@ -188,7 +188,7 @@ reg lnTotalUSGross Budget Genre_Comedy Summer OpeningTheatres OpeningGross Criti
 
 //10.a.Consider a variable called “star power” that reports the number of A-list stars for a movie. If you had data for this variable and added it to your regression from Question 9, what would have to be true for the slope coefficient of star power and how would the slope coefficient of the budget variable have to change for Griffith’s conclusion to be correct? 
 
-Starpower is a ommited variable. If regression model excludes Starpower, it will exist ommited variable bias and the estimated beta will be not consistant with actual beta.
+//Starpower is a ommited variable. If regression model excludes Starpower, it will exist ommited variable bias and the estimated beta will be not consistant with actual beta.
 
 
 
